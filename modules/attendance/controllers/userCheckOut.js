@@ -30,7 +30,7 @@ module.exports = asyncHandler(async (req, res, next) => {
   if (!attendant) {
     return res.status(BAD_REQUEST).json({
       status: false,
-      message: 'You are did not check in yet',
+      message: 'You did not check in yet',
       data: null
     });
   }
